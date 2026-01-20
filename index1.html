@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sohan</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="profilecard">
+        <div class="cardhead">
+            <div class="profilepic">❤️</div>
+        </div>
+
+    <div class="cardbody">
+        <h1 class="name">Sohan Rai</h1>
+        <p class="username">@code</p>
+
+        <p class="bio">
+            💻 Full Stack Developer | 🎨 UI/UX Enthusiast | 
+            ☕ Coffee Lover | 🎮 Gamer
+        </p>
+
+        <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">1.2K</div>
+                    <div class="stat-label">Followers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">543</div>
+                    <div class="stat-label">Following</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">89</div>
+                    <div class="stat-label">Posts</div>
+                </div>
+                
+        </div>
+
+        <div class="skills">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Python</span>
+        </div>
+            
+
+        <div class="buttons">
+                <button class="btn btn-primary" id="followBtn">Follow</button>
+                <button class="btn btn-secondary" id="messageBtn">Message</button>
+        </div>
+        
+    </div>
+
+
+
+
+
+    <script>
+
+       const followBtn = document.getElementById('followBtn');
+        followBtn.addEventListener('click', () => {
+            if (followBtn.textContent === 'Follow') {
+                followBtn.textContent = "Following"}
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

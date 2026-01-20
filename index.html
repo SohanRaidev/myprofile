@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    
+    <div class="profile-card">
+        
+        
+        <div class="card-header">
+           
+            <div class="profile-pic">
+                <img class="my-image" src="image.png" alt="">
+            </div>
+        </div>
+        
+        
+        <div class="card-body">
+            
+            <marquee><h1 class="name">Sohan Rai</h1></marquee>
+            <mark><p id="us" class="username"><mark>@sohanrrai &trade;</mark></p></mark>
+            
+            
+            <p class="bio">
+                💻 Full Stack Developer | 🎨 UI/UX Enthusiast | 
+                ☕ Coffee Lover | 🎮 Gamer
+            </p>
+            
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">1.2K</div>
+                    <div class="stat-label">Followers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">543</div>
+                    <div class="stat-label">Following</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">89</div>
+                    <div class="stat-label">Posts</div>
+                </div>
+                
+            </div>
+            
+            
+            <div class="skills">
+                <span class="skill-tag" id="html">HTML</span>
+                <span class="skill-tag" id="css">CSS</span>
+                <span class="skill-tag" id="javascript">JavaScript</span>
+                <span class="skill-tag" id="react">React</span>
+                <span class="skill-tag" id="python">Python</span>
+            </div>
+            
+            
+            <div class="buttons">
+                <button class="btn btn-primary" id="followBtn">Follow</button>
+                <button class="btn btn-secondary" id="messageBtn"><a target="_blank" href="https://yahoo.com">Message</a></button>
+            </div>
+        </div>
+    </div>
+    
+   
+    <script>
+        
+        const followBtn = document.getElementById('followBtn');
+        const messageBtn = document.getElementById('messageBtn');
+        const username = document.getElementById('us');
+        
+        followBtn.addEventListener('click', function() {
+            if (followBtn.textContent === 'Follow') {
+                followBtn.textContent = 'Following ✓';
+                followBtn.style.background = 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)';
+                username.textContent = '@socool';
+                alert('You are now following Sohan Rai!');
+            } else {
+                followBtn.textContent = 'Follow';
+                followBtn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                username.textContent = '@sohanrrai ™';
+            }
+        });
+        
+        messageBtn.addEventListener('click', function() {
+            if (messageBtn.textContent === 'Message') {
+                messageBtn.textContent = 'Sent 📨';
+                messageBtn.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';
+                messageBtn.style.color = 'white';
+                messageBtn.style.border = 'none';
+            } else {
+                messageBtn.textContent = 'Message';
+                messageBtn.style.background = 'white';
+                messageBtn.style.color = '#667eea';
+                messageBtn.style.border = '2px solid #667eea';
+            }
+        });
+        
+        html.addEventListener('click', function() {
+            alert('HTML is the standard markup language for creating web pages.');
+        });
+        css.addEventListener('click', function() {
+            alert('CSS is used to style and layout web pages.');    
+        });
+        javascript.addEventListener('click', function() {
+            alert('JavaScript is a programming language that enables interactive web pages.');
+        });
+        react.addEventListener('click', function() {
+            alert('Sohan is cool');
+        });
+        python.addEventListener('click', function() {
+            alert('Python is a high-level, interpreted programming language known for its readability.');
+        });
+    </script>
+    
+</body>
+</html>
